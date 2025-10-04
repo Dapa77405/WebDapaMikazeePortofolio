@@ -271,7 +271,7 @@ const About = () => (
         </p>
 
         <div className="mt-6">
-          <h3 className="text-lg font-semibold">Pencapaian terpilih (siap buat HR tercengang):</h3>
+          <h3 className="text-lg font-semibold">Pencapaian terpilih:</h3>
           <ul className="mt-2 list-disc pl-5 space-y-2 text-white/80">
             <li>Meningkatkan conversion rate landing page <strong>+34%</strong> lewat A/B test dan optimasi UI.</li>
             <li>Mempercepat loading page dari <strong>4s → 1.2s</strong> (Lighthouse 90+) sehingga bounce rate turun signifikan.</li>
