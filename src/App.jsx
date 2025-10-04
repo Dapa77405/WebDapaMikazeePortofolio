@@ -415,7 +415,7 @@ const projectsData = [
   {
     title: 'Mini Calculator Modern',
     description: 'Membuat Mini Calculator Menggunakan HTML, CSS, dan Javascript.`',
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://i.ytimg.com/vi/HQCLzqhiT2w/maxresdefault.jpg',
     tech: ['HTML,CSSS,JavaScript'],
     demoKey: 'calculator'
   },
