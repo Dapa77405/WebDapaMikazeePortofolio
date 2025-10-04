@@ -429,7 +429,7 @@ const projectsData = [
   {
     title: 'Anime Explorer',
     description: 'Mencari judul anime dengan API Jikan (v4) dan melihat detail ringkas.',
-    image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://images.wallpapersden.com/image/download/akaza-x-kyojuro-rengoku-demon-slayer-hd-art_bWhtZ2aUmZqaraWkpJRnamtlrWZsZWU.jpg',
     tech: ['React', 'Fetch', 'Jikan API'],
     demoKey: 'anime',
   },
