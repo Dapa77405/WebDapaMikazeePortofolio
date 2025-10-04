@@ -420,6 +420,13 @@ const projectsData = [
     demoKey: 'calculator'
   },
   {
+    title: 'Modern Todo App',
+    description: 'Aplikasi Todo List dengan fitur dark mode, filter, dan local storage untuk menyimpan task.',
+    image: 'https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1200&auto=format&fit=crop',
+    tech: ['React', 'TailwindCSS', 'LocalStorage'],
+    demoKey: 'todoapp'
+  },
+  {
     title: 'Anime Explorer',
     description: 'Mencari judul anime dengan API Jikan (v4) dan melihat detail ringkas.',
     image: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop',
@@ -733,6 +740,7 @@ const DemoParticles = () => {
 }
 
 import DemoCalculator from './components/DemoCalculator'
+import DemoTodoApp from './components/DemoTodoApp'
 
 /* ========================================================
    APP ROOT
@@ -754,6 +762,7 @@ export default function App() {
       case 'anime': return <DemoAnimeExplorer/>
       case 'particles': return <DemoParticles/>
       case 'calculator': return <DemoCalculator/>
+      case 'todoapp': return <DemoTodoApp/>
       default: return <div>Demo not found.</div>
     }
   }
