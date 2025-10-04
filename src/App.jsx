@@ -1,4 +1,16 @@
 import React, { useState, useEffect, useRef, Suspense } from 'react'
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
+import Tilt from 'react-parallax-tilt'
+import {
+  FiCpu, FiZap, FiFeather, FiSliders, FiX, FiMenu, FiChevronDown, FiMail, FiDownload,
+  FiGithub, FiLinkedin, FiTwitter, FiExternalLink, FiPhone
+} from 'react-icons/fi'
+import {
+  SiHtml5, SiCss3, SiJavascript, SiTypescript, SiPython, SiReact, SiNextdotjs, SiNodedotjs,
+  SiExpress, SiNestjs, SiTailwindcss, SiFramer, SiRedux, SiVite, SiWebpack, SiGraphql,
+  SiPrisma, SiPostgresql, SiMongodb, SiRedis, SiDocker, SiGit, SiJest, SiVitest, SiPlaywright,
+  SiVercel, SiAmazonaws, SiStorybook
+} from 'react-icons/si'
 
 /* ========================================================
    NAV STRUCTURE
