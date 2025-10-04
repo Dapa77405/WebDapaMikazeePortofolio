@@ -436,7 +436,7 @@ const projectsData = [
   {
     title: 'Particles Lab',
     description: 'Laboratorium partikel canvas dengan kontrol interaktif. Render mulai saat Anda klik.',
-    image: 'https://images.unsplash.com/photo-1620217495140-d27fef3f3e89?q=80&w=1200&auto=format&fit=crop',
+    image: 'https://cdn.labmanager.com/assets/articleNo/29978/aImg/53849/for-the-first-time-controlling-the-degree-of-twist-in-nanostructured-particles-m.jpg',
     tech: ['Canvas', 'React'],
     demoKey: 'particles',
   },
