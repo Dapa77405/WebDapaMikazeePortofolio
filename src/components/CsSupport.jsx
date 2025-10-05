@@ -7,6 +7,12 @@ const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
 const callOpenAI = async (message) => {
   try {
+    // Simpan history chat dalam array untuk konteks
+    const chatHistory = [];
+    
+    // Tambahkan pesan baru ke history
+    chatHistory.push({ role: 'user', content: message });
+
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
@@ -18,15 +24,31 @@ const callOpenAI = async (message) => {
         messages: [
           {
             role: 'system',
-            content: 'You are a helpful assistant for a portfolio website. You can provide information about the portfolio owner\'s skills, projects, and experience in web development. Keep responses concise and friendly.'
+            content: `You are a friendly and knowledgeable assistant for Herli's portfolio website. 
+Your name is Dapa Assistant. Use a casual and friendly tone, but stay professional.
+
+Key information to remember:
+- Owner: Herli Sherdiyanti
+- Email: herlisherdiyanti4@gmail.com
+- Phone: 083162178912
+- Skills: HTML, CSS, JavaScript, React, Node.js
+- Projects: Calculator App, Todo App, Anime Explorer
+
+When answering:
+1. Be concise but informative
+2. Use emojis occasionally to be friendly
+3. Vary your responses, don't be repetitive
+4. If asked in Indonesian, reply in Indonesian
+5. For project inquiries, give specific details
+6. For contact requests, provide email/phone
+7. Keep responses under 3 sentences unless detailed info is requested`
           },
-          {
-            role: 'user',
-            content: message
-          }
+          ...chatHistory // Include chat history for context
         ],
         max_tokens: 150,
-        temperature: 0.7
+        temperature: 0.8, // Slightly more creative responses
+        presence_penalty: 0.6, // Encourage more varied responses
+        frequency_penalty: 0.5 // Reduce repetition
       })
     });
 
@@ -44,7 +66,7 @@ const CsSupport = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([{
     type: 'bot',
-    text: 'Hi! 👋 I\'m an AI assistant ready to help you with any questions about my portfolio, projects, or web development skills!'
+    text: 'Halo! 👋 Saya Dapa Assistant, siap membantu Anda mengenal lebih jauh tentang portfolio dan project-project Herli. Ada yang bisa saya bantu?'
   }]);
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
