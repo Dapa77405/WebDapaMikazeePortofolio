@@ -741,6 +741,7 @@ const DemoParticles = () => {
 
 import DemoCalculator from './components/DemoCalculator'
 import DemoTodoApp from './components/DemoTodoApp'
+import CsSupport from './components/CsSupport'
 
 /* ========================================================
    APP ROOT
@@ -790,6 +791,7 @@ export default function App() {
           </Suspense>
         )}
       </Modal>
+      <CsSupport />
     </div>
   )
 }
